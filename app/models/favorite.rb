@@ -1,4 +1,4 @@
 class Favorite < ActiveRecord::Base
 	belongs_to :user
-	belong_to :photo
+	belongs_to :photo
 end
