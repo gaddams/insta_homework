@@ -47,4 +47,10 @@ class FavoritesController < ApplicationController
 
     redirect_to "/favorites", :notice => "Favorite deleted."
   end
+
+
+  def user_favorites
+    @favorites = current_user.favorites
+  end
+
 end

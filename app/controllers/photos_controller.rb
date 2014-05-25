@@ -52,11 +52,8 @@ class PhotosController < ApplicationController
   end
 
   def wall
-    @photos = Photo.where(:user_id => current_user.id)
-
-  end
-
-  def user_favorites
+    #@photos = Photo.where(:user_id => current_user.id)
+    @photos = current_user.photos
   end
 
 end
